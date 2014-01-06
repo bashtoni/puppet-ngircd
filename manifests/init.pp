@@ -62,7 +62,7 @@ class ngircd (
   $customglobalvars = {},
   $operators        = [{}],
   $servers          = [{}],
-  $channelvars      = [{}]
+  $channels         = [{}]
 ) inherits ngircd::params {
 
   # validate parameters here
