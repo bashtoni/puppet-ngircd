@@ -1,0 +1,10 @@
+name          'bashtoni-ngircd'
+version       '0.0.1'
+source        'UNKNOWN'
+author        'Sam Bashton <sam@bashton.com>'
+license       'Apache License, Version 2.0'
+summary       'Installs and configures ngircd'
+description   'UNKNOWN'
+project_page  'UNKNOWN'
+
+dependency 'puppetlabs/stdlib'

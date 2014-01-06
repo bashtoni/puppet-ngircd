@@ -1,0 +1,32 @@
+[Global]
+  Name = <%= @servername %>
+  Info = <%= @info %>
+  Listen = <%= @listen %>
+  Ports  = <%= @ports %>
+  AdminInfo1 = <%= @admindesc %>
+  AdminInfo2 = <%= @adminlocation %>
+  AdminEMail = <%= @adminemail %>
+  <% if @motd %>Motd = <%= @motd %><% end -%>
+  <% if @motdfile %>Motdfile = <%= @motd %><% end -%>
+  <% if @password %>Password = <%= @password %><% end -%>
+  <% if @customglobalvars %><% @customglobalvars.each do |key,value| -%>
+  <%= key %> = <%= value %>
+  <% end %><% end -%>
+
+<% @operators.each do |operator| -%>
+[Operator]
+<% operator.each do |key,value| -%>
+  <%= key %> = <%= value %>
+<% end -%><% end -%>
+
+<% @servers.each do |operator| -%>
+[Server]
+<% server.each do |key,value| -%>
+  <%= key %> = <%= value %>
+<% end -%><% end -%>
+
+<% @channels.each do |operator| -%>
+[Channel]
+<% channel.each do |key,value| -%>
+  <%= key %> = <%= value %>
+<% end -%><% end -%>
