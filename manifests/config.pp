@@ -5,7 +5,7 @@
 class ngircd::config {
 
   file { $::ngircd::params::config:
-    ensure  => '::ngircd::ensure',
+    ensure  => $::ngircd::ensure,
     owner   => 'root',
     group   => 'ngircd',
     mode    => '0660',
