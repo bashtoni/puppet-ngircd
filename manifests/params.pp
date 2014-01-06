@@ -10,8 +10,6 @@ class ngircd::params {
       $service_name = 'ngircd'
       $config = '/etc/ngircd.conf'
       $motd   = '/etc/ngircd.motd'
-      $server_uid = 'ngircd'
-      $server_gid = 'ngircd'
       $pidfile = '/var/run/ngircd/ngircd.pid'
     }
     default: {
