@@ -51,6 +51,7 @@
 # [*channels*]
 #   Array of hashes of channels
 class ngircd (
+  $ensure            = 'present',
   $servername       = 'bad.irc.server',
   $info             = 'Badly configured IRC server',
   $listen           = '0.0.0.0',
@@ -65,7 +66,7 @@ class ngircd (
   $options          = {},
   $operators        = [{}],
   $servers          = [{}],
-  $channelvars      = [{}]
+  $channels         = [{}]
 ) inherits ngircd::params {
 
   # validate parameters here

@@ -25,13 +25,13 @@
   <%= key %> = <%= value %>
 <% end -%><% end -%>
 
-<% @servers.each do |operator| -%>
+<% @servers.each do |server| -%>
 [Server]
 <% server.each do |key,value| -%>
   <%= key %> = <%= value %>
 <% end -%><% end -%>
 
-<% @channels.each do |operator| -%>
+<% @channels.each do |channel| -%>
 [Channel]
 <% channel.each do |key,value| -%>
   <%= key %> = <%= value %>
