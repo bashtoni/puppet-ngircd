@@ -39,8 +39,11 @@
 # [*customglobalvars*]
 #   Hash of additional global variables
 #
+# [*options*]
+#   Hash of variables under options
+#
 # [*operators*]
-#   Array of operator hashes.  Each hash should contain Name, Password, and optoinally mask
+#   Array of operator hashes.  Each hash should contain Name, Password, and optionally mask
 #
 # [*servers*]
 #   Array of hashes of other servers to connect to
@@ -59,6 +62,7 @@ class ngircd (
   $adminlocation    = undef,
   $adminemail       = undef,
   $customglobalvars = {},
+  $options          = {},
   $operators        = [{}],
   $servers          = [{}],
   $channelvars      = [{}]

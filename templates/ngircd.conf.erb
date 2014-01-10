@@ -13,6 +13,12 @@
   <%= key %> = <%= value %>
   <% end %><% end -%>
 
+<% if @options -%>
+[Options]
+<%= @options.each do |key,value| -%>
+<%=key %> = <%= value %>
+<% end %><% end -%>
+
 <% @operators.each do |operator| -%>
 [Operator]
 <% operator.each do |key,value| -%>
